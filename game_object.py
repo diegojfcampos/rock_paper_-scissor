@@ -12,20 +12,19 @@ class Game():
         print("4 - Exit");
 
     def human_choice(self):
-        human_choice = int(input("\n==========================\n Make your choice (1 to 4):  ")) 
-        if human_choice == 1:
+        human_choice = input("\n==========================\n Make your choice (1 to 4):  ")
+        if human_choice == "1":
             return "ROCK"
-        if human_choice == 2:
+        if human_choice == "2":
             return "PAPER"
-        if human_choice == 3:
+        if human_choice == "3":
             return "SCISSOR"
-        if human_choice == 4:
+        if human_choice == "4":
             return "EXIT"
 
     def computer_choice(self):
         option = ["ROCK", "PAPER", "SCISSOR"]
-        computer_choice = random.choice(option)  
-        print(computer_choice)
+        computer_choice = random.choice(option)          
         return computer_choice
 
 
@@ -58,5 +57,9 @@ class Game():
                 print("YOU WIN")
             else:
                 print("DRAWN")
+
+    def verify(human_choice):
+        if human_choice == "EXIT":
+           return break   
 
     
